@@ -130,6 +130,11 @@ on('load', function() {
             return false;
         if (!section)
             return false;
+        if(window.history.pushState) {
+          window.history.pushState('', '/', window.location.pathname)
+        } else {
+          window.location.hash = '';
+        }
         if (!section.classList.contains('inactive')) {
             if (scrollPoint)
                 doScroll(scrollPoint);
@@ -178,7 +183,7 @@ on('load', function() {
                         }, 75);
                     }, 500);
                 }, 75);
-            }, 250);
+            }, 250)
         }
         return false;
     });
