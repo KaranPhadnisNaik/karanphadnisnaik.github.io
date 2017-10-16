@@ -14,6 +14,7 @@
         <meta property="twitter:card" content="summary_large_image"/>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,900,900italic,200,200italic,700,700italic" rel="stylesheet" type="text/css"/>
         <link rel="icon" type="image/png" href="assets/images/favicon.png?v58648200237051"/>
+        <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
         <style>
             html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
                 margin: 0;
@@ -384,7 +385,7 @@
 
             #buttons01 li a {
                 display: block;
-                width: 7rem;
+                width: 13rem;
                 height: 2.25rem;
                 line-height: 2.25rem;
                 padding: 0 1.125rem;
@@ -459,6 +460,7 @@
                 overflow: hidden;
                 max-width: 100%;
                 display: block;
+                padding: 15px;
             }
 
             .image a, .image span {
@@ -589,6 +591,10 @@
                 text-transform: none;
                 letter-spacing: 0;
                 width: auto;
+            }
+
+            #text06 mark {
+              background-color: #FFF500;
             }
 
             #text02 br + br {
@@ -809,7 +815,7 @@
                 }
 
                 #buttons01 li a {
-                    width: 7rem;
+                    width: 13rem;
                 }
             }
 
@@ -965,7 +971,7 @@
                                 <a href="#about" class="button n02">About</a>
                             </li>
                             <li>
-                                <a href="https://projects.kphnaik.com/" class="button n03">Projects</a>
+                                <a href="#project" class="button n03">Projects</a>
                             </li>
                             <li>
                                 <a href="#contact" class="button n04">Contact</a>
@@ -1023,9 +1029,70 @@
                                 <a href="https://github.com/KaranPhadnisNaik?tab=repositories" class="button n01">Github</a>
                             </li>
                             <li>
-                                <a href="cv.html" class="button n02">CV</a>
+                                <a href="cv.html" class="button n02">Curriculum Vitae</a>
                             </li>
                         </ul>
+                    </section>
+                    <section id="project-section">
+                        <h1 id="text03">Projects</h1>
+                        <h2 id="text04">A brief collection of my favorite engineering projects</h2>
+                    <div class="container" id="columns01">
+                        <div class="inner">
+                            <div>
+                              <div class="image" id="image02">
+                                  <i class="fa fa-graduation-cap fa-4x"></i>
+                              </div>
+                                <p id="text06"><mark>Bitwise</mark></p>
+                                <hr id="divider02"/>
+                                <p id="text07">
+                                    <span>Software Development Education Platform</span>
+                                    <br/>
+                                    <span>
+                                        Built with: <strong>React.js</strong>
+                                        , <strong>Flask</strong>
+                                    </span>
+                                    <br/>
+                                    <span>TBA</span>
+                                </p>
+                                <ul class="buttons" id="buttons02">
+                                    <li>
+                                        <a href="#proj" class="button n01">TBA</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" id="columns01">
+                        <div class="inner">
+                            <div>
+                              <div class="image" id="image02">
+                                  <i class="fa fa-send-o fa-4x"></i>
+                              </div>
+                                <p id="text06"><mark>MiniUrl</mark></p>
+                                <hr id="divider02"/>
+                                <p id="text07">
+                                    <span>URL Shortening Service </span>
+                                    <br/>
+                                    <span>
+                                        Built with: <strong>Flask</strong>
+                                        , <strong>React.js</strong>
+                                        , <strong>SQlite</strong>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                        Deployed on <strong>Heroku</strong>
+                                    </span>
+                                </p>
+                                <ul class="buttons" id="buttons02">
+                                    <li>
+                                        <a href="http://www.minirl.com" class="button n01">View</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="divider02"/>
+
                     </section>
                     <section id="contact-section">
                         <p id="text10">Contact</p>
