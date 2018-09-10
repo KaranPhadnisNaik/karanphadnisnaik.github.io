@@ -3,3 +3,9 @@
     box-shadow: 2px 19px 68px rgba(0,0,0,0.10), 5px 10px 23px rgba(0,0,0,0.12);
   }
 }
+
+.profile {
+  width:160px;
+  height:160px;
+  background-color: white;
+}
